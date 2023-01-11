@@ -1,0 +1,32 @@
+
+<script>
+    // display a square with color + size from prompt()
+
+  
+  color       = prompt( "Enter color name or code")
+  size        = prompt( "Enter size in pixels" ) 
+  border      = prompt( "Enter border size in pixels" ) 
+  borderStyle = prompt( "Enter borderStyle, one of the option: solid, dotted, double, dashed" )
+  borderColor = prompt( "Enter borderColor name or code" )
+
+  // !!! String in JS
+  // "..."
+  // '...'
+  // `...` - very useful
+
+  document.write(  
+
+    `<div style="
+        background-color: ${color};
+        width: ${size}px ;
+        height: ${size}px;
+        border-width: ${border}px;
+        border-style: ${borderStyle};
+        border-color:${borderColor};"
+     >
+    
+    </div>`
+  )
+
+  // HW: user - border width, color
+</script>

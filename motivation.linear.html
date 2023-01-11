@@ -1,0 +1,24 @@
+<!-- FOOD ORDER dileme-->
+
+<script>
+
+    foodName    = "Salad"   // String
+    foodPrice   = 15.00     // Number
+    foodAvailQ  = 5         // Number
+
+    clientQ     = parseInt(prompt("How many " + foodName + " do you want ?"))
+
+    // HERE - DECISION ?
+
+    if (foodAvailQ >= clientQ) {
+        cost = foodPrice * clientQ
+        alert("Total Cost: " + cost)
+    } else {
+        alert("Sorry, we can offer only: " + foodAvailQ)
+    }
+
+    cost        = foodPrice * clientQ
+    
+    alert("Total Cost: " + cost)
+
+</script>
